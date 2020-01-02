@@ -11,8 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.tabs.TabLayout
-import com.omidio.tabsyncedadapter.LinearLayoutManagerWithSmoothScroller
-import com.omidio.tabsyncedadapter.TabSyncedRecyclerView
+import com.omidio.tabsyncedrecyclerview.LinearLayoutManagerWithSmoothScroller
+import com.omidio.tabsyncedrecyclerview.TabSyncedRecyclerView
 
 class MainActivity : AppCompatActivity() {
 

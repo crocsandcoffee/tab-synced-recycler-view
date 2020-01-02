@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.omidio.tabsyncedadaptersample", appContext.packageName)
+        assertEquals("com.omidio.tabsyncedrecyclerviewsample", appContext.packageName)
     }
 }
