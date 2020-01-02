@@ -3,7 +3,6 @@ package com.omidio.tabsyncedrecyclerview
 import android.content.Context
 import android.graphics.PointF
 import android.util.AttributeSet
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
@@ -152,8 +151,7 @@ class TabSyncedRecyclerView @JvmOverloads constructor(
             // ignore the onScrolled callbacks
             if (!ignoreScroll) {
                 when (val layoutManager = recyclerView.layoutManager) {
-                    is LinearLayoutManager -> updateTabsFromScrollEvent(layoutManager.findFirstCompletelyVisibleItemPosition())
-                    is GridLayoutManager -> updateTabsFromScrollEvent(layoutManager.findFirstCompletelyVisibleItemPosition())
+                    is LinearLayoutManagerWithSmoothScroller -> updateTabsFromScrollEvent(layoutManager.findFirstCompletelyVisibleItemPosition())
                     else -> throw IllegalArgumentException("The layoutManager:$layoutManager is unsupported")
                 }
             }
@@ -183,7 +181,7 @@ class LinearLayoutManagerWithSmoothScroller(
         startSmoothScroll(smoothController)
     }
 
-    open inner class TopSnappedSmoothScroller(context: Context) : LinearSmoothScroller(context) {
+    inner class TopSnappedSmoothScroller(context: Context) : LinearSmoothScroller(context) {
 
         override fun computeScrollVectorForPosition(targetPosition: Int): PointF? {
             return this@LinearLayoutManagerWithSmoothScroller.computeScrollVectorForPosition(
