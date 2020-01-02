@@ -1,4 +1,4 @@
-package com.omidio.tabsyncedadaptersample
+package com.omidio.tabsyncedrecyclerviewsample
 
 import org.junit.Test
 

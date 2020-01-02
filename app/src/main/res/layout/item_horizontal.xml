@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_tv"
+    android:layout_width="160dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:textColor="@android:color/white"
+    android:textSize="16sp"
+    tools:text="Item in pos:0" />

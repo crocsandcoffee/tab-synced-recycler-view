@@ -1,4 +1,4 @@
-package com.omidio.tabsyncedadaptersample
+package com.omidio.tabsyncedrecyclerviewsample
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
