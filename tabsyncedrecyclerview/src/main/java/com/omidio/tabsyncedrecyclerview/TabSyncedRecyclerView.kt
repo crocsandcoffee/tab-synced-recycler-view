@@ -19,7 +19,7 @@ import java.lang.IllegalArgumentException
  *
  * A [TabSyncedScrollListener] and  [LinearLayoutManagerWithSmoothScroller] must also be set in order
  * for everything to work properly.
- */ 
+ */
 class TabSyncedRecyclerView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
